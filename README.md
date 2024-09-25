@@ -19,3 +19,10 @@ Phần mềm kiểm thử độ chính xác Object Detection YOLO v8. Chương t
 
 5. Extract camera frame và bouding box
 Dùng để retrain
+
+## Cách convert file pt sang onnx
+
+Sử dụng command sau, lưu ý bạn phải cài đặt YOLO v8 thành công
+
+`!yolo export model='./yolov8n.pt' imgsz=640,640 format=onnx opset=12 simplify=True dynamic=False
+`
